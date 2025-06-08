@@ -1,6 +1,6 @@
 # counter-strike-aim-training
 
-# Unity 项目结构（Assets 文件夹）
+## Unity 项目结构（Assets 文件夹）
 
 ```text
 Assets/
