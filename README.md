@@ -2,46 +2,47 @@
 
 ## Unity 项目结构（Assets 文件夹）
 
-```text
+```plaintext
 Assets/
 ├── Agent/
 │   └── SAS/
-│       ├── ...
-│       └── SAS.fbx
 ├── Audio/
 │   ├── AK47.wav
-│   └── Break.mp3
+│   ├── Break.mp3
+│   ├── MainMixer.mixer
+│   └── Mord Fustang.mp3
 ├── Guns/
 │   ├── AK-47 Glod/
-│   │   └── ...（省略 AK-47 Glod 下具体文件）
 │   ├── AK-47 The Empress/
-│   │   └── ...（省略 AK-47 The Empress 下具体文件）
 │   ├── AK47 WILD LOTUS/
-│   │   └── ...（省略 AK47 WILD LOTUS 下具体文件）
 │   └── AWP  Dragon Lore/
-│       └── ...（省略 AWP  Dragon Lore 下具体文件）
 ├── Materials/
 │   ├── Black.mat
 │   ├── FlameMat.mat
 │   ├── GroundMat.mat
 │   └── TargetMaterial.mat
 ├── Prefabs/
+│   ├── ChallengeTarget.prefab
 │   ├── MuzzleFlash.prefab
 │   ├── Sphere.prefab
 │   └── Target.prefab
-├── Resources/
-│   └── GlobalSettingSetting.prefab
 ├── Scenes/
 │   ├── ChallengeScene.unity
 │   ├── MainMenu.unity
 │   └── TrainingScene.unity
 ├── Scripts/
-│   ├── ChallengeScene_add
+│   ├── ChallengeScene_add/
+│   │   ├── ChallengeTarget.cs
+│   │   └── MovingTarget.cs
 │   ├── MainMenu/
 │   │   ├── MainMenuController.cs
-│   │   ├── SettingLoader.cs
+│   │   ├── MusicManager.cs
 │   │   └── SettingManager.cs
-│   ├── Setting
+│   ├── Setting/
+│   │   ├── AudioSettingsManager.cs
+│   │   ├── SettingsManager.cs
+│   │   ├── SettingsUIManager.cs
+│   │   └── SliderPercentageDisplay.cs
 │   └── TrainingScene/
 │       ├── AK47Shoot.cs
 │       ├── Bullet.cs
@@ -51,11 +52,15 @@ Assets/
 │       └── TargetSpawner.cs
 ├── Sprites/
 │   ├── Flame.png
-│   ├── Home.png
 │   ├── library_hero_schinese.png
-│   ├── logo_schinese.png
-│   ├── Refresh.png
-│   └── Setting.png
-├── TextMesh Pro/
-├── UI/
+│   └── logo_schinese.png
+└── UI/
 ```
+
+## License
+
+This project is licensed under the GNU GPL v3 (see [LICENSE](./LICENSE)),  
+with additional terms described in [LICENSE_ADDITIONAL](./LICENSE_ADDITIONAL).
+
+本项目在 GNU GPL v3 许可下发布（详见 [LICENSE](./LICENSE)），  
+附加条款见 [LICENSE_ADDITIONAL](./LICENSE_ADDITIONAL)。
